@@ -1,0 +1,141 @@
+body {
+  position: relative;
+  height: 100vh;
+  padding: 0; 
+  margin: 0;
+  background: #FDF6D0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  box-shadow: inset 0 0 200px #e0914855;
+}
+
+.container{
+  position: absolute;
+  margin-top: auto;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%); 
+  align-items: center;
+  width: 400px;
+  height: 300px;
+} 
+
+.plate {
+  position: absolute;
+  top: -4%;
+  width: 100%;
+  height: 41%;
+  background: #FFFFFF;
+  /* Stroke */
+  border: 1.25px solid #F9EADC;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px rgba(165, 75, 75, 0.15);
+}
+
+.inner-plate {
+  position: absolute;
+  left: 12.5%;
+  top: 11%;
+  width: 75%;
+  height: 65%;
+  background: #FFFFFF;
+  /* Stroke */
+  border: 1.25px solid #F9EADC;
+  border-radius: 50%;
+  margin: 5px auto; /*stacked "plates" without flexboxes*/
+}
+
+/*------ELEMENTS TO ANIMATE------*/
+
+.pancake {
+  display: inline-block;
+  position: absolute;
+  width: 65%;
+  height: 25%;
+  left: 18%;
+  top: 0;
+  background: #FFE68E;
+  border-radius: 50%; 
+  z-index: 1;
+}
+
+.top-p {
+  position: absolute;
+  width: 95%;
+  height: 80%;
+  left: 2.25%;
+  background: linear-gradient(180deg, rgba(222, 159, 101, 0.75) 0%, #E09148 100%);
+  border-radius: 50%; 
+}
+
+.p2 {
+  z-index: 2;
+  top: -7%; 
+  left: 18%; 
+}
+
+.p3 {
+  z-index: 3;
+  top: -14%; 
+  left: 18%; 
+}
+
+.p4 {
+  z-index: 4;
+  top: -21%; 
+  left: 18%; 
+}
+
+.p5 {
+  z-index: 5;
+  top: -28%; 
+  left: 18%; 
+}
+
+.p6 {
+  z-index: 6;
+  top: -35%; 
+  left: 18%; 
+}
+
+/*BUTTER*/
+.shadow {
+  position: absolute;
+  z-index: 8;
+  top: 0;
+  left: 42%; 
+  height: 30%; 
+  width: 15%;
+  margin: auto;
+  background: #FFDE68;
+  border-radius: 1px;
+  box-shadow: 1px 2px 2px rgba(202, 133, 65, 0.75);
+  transform: matrix(0.74, -0.44, 0.98, 0.77, 0, 0); 
+  }
+
+.top-b {
+  position: absolute;
+  z-index: 9;
+  top: 0;
+  left: 45%; 
+  height: 25%; 
+  width: 10%;
+  margin: auto;
+  background: #FFEFB5;
+  border-radius: 1px;
+  transform: matrix(0.74, -0.44, 0.98, 0.77, 0, 0); 
+}
+
+.shine{
+  position: absolute;
+  z-index: 10;
+  top: 4%;
+  left: 49%; 
+  height: 7%; 
+  width: 4%;
+  margin: auto;
+  background: #FFF;
+  border-radius: 1px;
+  transform: rotate(45deg);
+}
